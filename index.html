@@ -5,83 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Watch 比較</title>
-    <style>
-        table,
-        tr,
-        td{
-            border-collapse:collapse;
-            border:1px solid black;
-            padding: 0.5rem;
-         }
-        
-    </style>
+    <link rel= "stylesheet" href="./style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <script>
+        $(document).ready(function(){
+            $("#show1").click(function(){
+            $("#picture1").fadeToggle("slow");
+            });
+
+            $("#show2").click(function(){
+            $("#picture2").fadeToggle("slow");
+            });
+
+            $("#show3").click(function(){
+            $("#picture3").fadeToggle("slow");
+            });
+
+            $("#show4").click(function(){
+            $("#picture1").fadeToggle("slow");
+            $("#picture2").fadeToggle("slow");
+            $("#picture3").fadeToggle("slow");
+            });
+            
+
+
+            $("#show1").css("color", "purple");
+            $("#show2").css("color", "green");
+            $("#show3").css("color", "blue");
+
+        });
+    </script>
 </head>
 <body>
+    <div class="container-fluid">
     <center>
-    <h1>哪一款 Apple Watch<br>
-        適合你？
-    </h1>
-    <table>
-    <tbody>
-        <tr><!--錶名-->
-            <td colspan="2" align="center">
-                Series 7
-            </td>
-            <td colspan="2" align="center">
-                SE
-            </td>
-        </tr>
-        <tr><!--image-->
-            <td colspan="2" align="center">
-                <img 
-                    width="105"
-                    height="105" 
-                    src = "./images/Series 7.png"
-                    alt = "Series 7 pic"
-                />
-            </td>
-            <td colspan="2" align="center">
-                <img 
-                    width="105"
-                    height="105" 
-                    src = "./images/SE.png"
-                    alt = "SE pic"
-                />
-            </td>
-        </tr>
-        <tr><!--簡介-->
-            <td colspan="2" style="color: gray;">
-                最大、最先進的隨顯 Retina 顯示器，可<br>
-                測量你的血氧濃度，還配備歷來最強的抗<br>
-                裂水晶玻璃錶面與防塵認證，成就歷來最<br>
-                經久耐用的 Apple Watch。</td>
-            <td colspan="2" style="color: gray;"> 
-                眾多必備功能，助你保持緊密聯繫，常保<br>
-                活力及健康。具備寬廣的 Retina 顯示器<br>
-                與跌倒偵測，更有家人共享設定，最適<br>
-                合家中的孩子和長輩使用。</td>
-        </tr>
-        <tr><!--價錢-->
-            <td style="color: red;">
-                GPS + 行動網路<br>
-                NT$14,900 起
-            </td>
-            <td>
-                GPS<br>
-                NT$11,900 起
-            </td>
-            <td style="color: red;">
-                GPS + 行動網路<br>
-                NT$9,900 起
-            </td>
-            <td>
-                GPS<br>
-                NT$8,400 起
-            </td>
-        </tr>
-    </tbody>
-    </table>
-    
-    </center>
+        <h1>哪一款 Apple Watch<br>
+            適合你？
+        </h1>
+        <table>
+        <tbody>
+            <tr><!--錶名-->
+                <td colspan="2" align="center">
+                    Series 7
+                </td>
+                <td colspan="2" align="center">
+                    SE
+                </td>
+                <td colspan="2" align="center">
+                    Series 3
+                </td>
+            </tr>
+            <tr><!--image-->
+                
+                <td colspan="2" align="center">
+                    
+                    <img 
+                        id="picture1"
+                        style="display: none;"
+                        width="105"
+                        height="105" 
+                        src = "./images/Series 7.png"
+                        alt = "Series 7 pic"
+                        class="IMG1"
+                    />
+                    
+                </td>
+                <td colspan="2" align="center">
+                    <img 
+                        id="picture2"
+                        style="display: none;"
+                        width="105"
+                        height="105" 
+                        src = "./images/SE.png"
+                        alt = "SE pic"
+                        class="IMG2"
+                    />
+                </td>
+
+                <td colspan="2" align="center">
+                    <img 
+                        id="picture3"
+                        style="display: none;"
+                        width="105"
+                        height="105" 
+                        src = "./images/Series 3.png"
+                        alt = "Series 3 pic"
+                        class="IMG3"
+                    />
+                </td>
+            </tr>
+            <tr><!--簡介-->
+                <td colspan="2" style="color: gray;">
+                    最大、最先進的隨顯 Retina 顯示器，可<br>
+                    測量你的血氧濃度，還配備歷來最強的抗<br>
+                    裂水晶玻璃錶面與防塵認證，成就歷來最<br>
+                    經久耐用的 Apple Watch。</td>
+                <td colspan="2" style="color: gray;"> 
+                    眾多必備功能，助你保持緊密聯繫，常保<br>
+                    活力及健康。具備寬廣的 Retina 顯示器<br>
+                    與跌倒偵測，更有家人共享設定，最適<br>
+                    合家中的孩子和長輩使用。</td>
+                <td colspan="2" style="color: gray;">
+                    種種核心級的健身、健康與連線功能的<br>
+                    Apple Watch。</td>
+            </tr>
+            <tr><!--價錢-->
+                <td style="color: red;">
+                    GPS + 行動網路<br>
+                    NT$14,900 起
+                </td>
+                <td>
+                    GPS<br>
+                    NT$11,900 起
+                </td>
+                <td style="color: red;">
+                    GPS + 行動網路<br>
+                    NT$9,900 起
+                </td>
+                <td>
+                    GPS<br>
+                    NT$8,400 起
+                </td>
+                <td colspan="2" align="center">
+                    GPS<br>
+                    NT$5,900 起
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button id="show1">顯示＆隱藏照片</button></td>
+                <td colspan="2" align="center"><button id="show2">顯示＆隱藏照片</button></td>
+                <td colspan="2" align="center"><button id="show3">顯示＆隱藏照片</button></td>
+            </tr>
+        </tbody>
+        </table>
+        </center>
+        <button id="show4" style="font-size: 150%; background-color: lightcoral;">顯示＆隱藏所有照片</button>
+        </div>
 </body>
+<p>以上資料來源為：<a 
+    target="_self"
+    href="https://www.apple.com/tw/watch/compare/"
+    >apple.com</a></p>
+
 </html>
